@@ -1,4 +1,4 @@
-# rag-pgvector
+# rag-arabic-english
 (Work in Progress)
 RAG implementation with arabic and english language support 
 
