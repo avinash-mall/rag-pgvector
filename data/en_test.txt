@@ -1,0 +1,117 @@
+The names "John Doe" for males, "Jane Doe" or "Jane Roe" for females, or "Jonnie Doe" and "Janie Doe" for children, or just "Doe" non-gender-specifically are used as placeholder names for a party whose true identity is unknown or must be withheld in a legal action, case, or discussion. The names are also used to refer to acorpse or hospital patient whose identity is unknown. This practice is widely used in the United States and Canada, but is rarely used in other English-speaking countries including the United Kingdom itself, from where the use of "John Doe" in a legal context originates. The names Joe Bloggs or John Smith are used in the UK instead, as well as in Australia and New Zealand.
+John Doe is sometimes used to refer to a typical male in other contexts as well, in a similar manner to John Q. Public, known in Great Britain as Joe Public, John Smith or Joe Bloggs. For example, the first name listed on a form is often John Doe, along with a fictional address or other fictional information to provide an example of how to fill in the form. The name is also used frequently in popular culture, for example in the Frank Capra film Meet John Doe. John Doe was also the name of a 2002 American television series.
+Similarly, a child or baby whose identity is unknown may be referred to as Baby Doe. A notorious murder case in Kansas City, Missouri, referred to the baby victim as Precious Doe. Other unidentified female murder victims are Cali Doe and Princess Doe. Additional persons may be called James Doe, Judy Doe, etc. However, to avoid possible confusion, if two anonymous or unknown parties are cited in a specific case or action, the surnames Doe and Roe may be used simultaneously; for example, "John Doe v. Jane Roe". If several anonymous parties are referenced, they may simply be labelled John Doe #1, John Doe #2, etc. (the U.S. Operation Delego cited 21 (numbered) "John Doe"s) or labelled with other variants of Doe / Roe / Poe / etc. Other early alternatives such as John Stiles and Richard Miles are now rarely used, and Mary Major has been used in some American federal cases.
+
+Developer(s)	Oracle Corporation
+Initial release	1979; 45 years ago
+Stable release	
+23ai[1] Edit this on Wikidata / 19 September 2023; 8 months ago
+Written in	Assembly language, C, C++[2]
+Type	Multi-model database
+License	Proprietary[3]
+Website	www.oracle.com/database/
+Oracle Database (commonly referred to as Oracle DBMS, Oracle Autonomous Database, or simply as Oracle) is a proprietary multi-model[4] database management system produced and marketed by Oracle Corporation.
+
+It is a database commonly used for running online transaction processing (OLTP), data warehousing (DW) and mixed (OLTP & DW) database workloads. Oracle Database is available by several service providers on-prem, on-cloud, or as a hybrid cloud installation. It may be run on third party servers as well as on Oracle hardware (Exadata on-prem, on Oracle Cloud or at Cloud at Customer).[5]
+
+Oracle Database uses SQL query language for database updating and retrieval.[6]
+
+History
+Larry Ellison and his two friends and former co-workers, Bob Miner and Ed Oates, started a consultancy called Software Development Laboratories (SDL) in 1977. SDL developed the original version of the Oracle software. The name Oracle comes from the code-name of a CIA-funded project Ellison had worked on while formerly employed by Ampex.[7]
+
+Releases and versions
+Oracle products follow a custom release-numbering and -naming convention. The "c" in the current release, Oracle Database 23c, stands for "Cloud". Previous releases (e.g. Oracle Database 10g and Oracle9i Database) have used suffixes of "g" and "i" which stand for "Grid" and "Internet" respectively. Prior to the release of Oracle8i Database, no suffixes featured in Oracle Database naming conventions. There was no v1 of Oracle Database, as co-founder Larry Ellison "knew no one would want to buy version 1".[8] For each database release, Oracle also provides an Express Edition (XE) that is free to use.[9]
+
+Oracle Database release numbering has used the following codes:
+
+Features
+Oracle Database 23ai	23.4.0	On May 2, 2024, Oracle Database 23ai[10] was released on Oracle Cloud Infrastructure (OCI) as cloud services, including OCI Exadata Database Service, OCI Exadata Database Cloud@Customer, and OCI Base Database Service. It is also available in Always Free Autonomous Database. Oracle Database 23c (previously released in 2023) was renamed to Oracle Database 23ai (23.4) due to the significant additional engineering effort to add features that bring AI capabilities to the data in Oracle Database. Oracle Database 23ai will be made available for on-premises deployment, including on Oracle Exadata, later in 2024.
+Oracle Database 23c (23.2 and 23.3) was released in 2023: April 2023 (Linux) Oracle Database Free - Developer Release[11] September 2023 Oracle Database on Base Database Service[12]
+
+AI Vector Search[13] (includes new Vector data type, Vector indexes, and Vector SQL operators/functions), JSON Relational Duality,[14] JSON Schema Validation, Transactional Microservices Support, OKafka, Operational Property Graphs, Support for SQL/PGQ, Schema Privileges, Developer Role, In-database SQL Firewall, TLS 1.3 Support, Integration with Azure Active Directory OAuth2, True Cache for mid-tier caching, Readable Per-PDB Standby, Globally Distributed Database with active-active RAFT-based replication, Real-time SQL Plan Management, Priority Transactions, SQL Syntax Simplification, Schema Annotations, Data Use Case Domains, Column Value Lock-free Reservations
+Oracle Database 21c	21.1.0	December 2020 (cloud)[15]
+August 2021 (Linux)[16]
+
+Blockchain Tables, Multilingual Engine - JavaScript Execution in the Database, Binary JSON Data Type, Per-PDB Data Guard Physical Standby (aka Multitenant Data Guard), Per-PDB GoldenGate Change Capture, Self-Managing In-Memory, In-Memory Hybrid Columnar Scan, In-Memory Vector Joins with SIMD, Sharding Advisor Tool, Property Graph Visualization Studio, Automatic Materialized Views, Automatic Zone Maps, SQL Macros, Gradual Password Rollover
+Oracle Database 19c	19.1.0 // 12.2.0.3	February 2019 (Exadata)[17]
+April 2019 (Linux)[18]
+June 2019 (cloud)
+
+Active Data Guard DML Redirection, Automatic Index Creation, Real-Time Statistics Maintenance, SQL Queries on Object Stores, In-Memory for IoT Data Streams, Hybrid Partitioned Tables, Automatic SQL Plan Management, SQL Quarantine, Zero-Downtime Grid Infrastructure Patching, Finer-Granularity Supplemental Logging, Automated PDB Relocation
+Oracle Database 18c	18.1.0 // 12.2.0.2	February 2018 (cloud, Exadata)[19]
+July 2018 (other)[20]
+
+18.17.0
+January 2022	Polymorphic Table Functions, Active Directory Integration, Transparent Application Continuity, Approximate Top-N Query Processing, PDB Snapshot Carousel, Online Merging of Partitions and Subpartitions
+Oracle Database 12c Release 2	12.2.0.1
+March 2017	August 2016 (cloud)
+March 2017 (on-prem)
+
+12.2.0.1
+March 2017	Native Sharding, Zero Data Loss Recovery Appliance, Exadata Cloud Service, Cloud at Customer
+
+Oracle Database 12c Release 1	12.1.0.1	July 2013[21]	12.1.0.2
+July 2014	Multitenant architecture, In-Memory Column Store, Native JSON, SQL Pattern Matching, Database Cloud Service
+
+Oracle Database 11g Release 2	11.2.0.1	September 2009[22]	11.2.0.4
+August 2013	Edition-Based Redefinition, Data Redaction, Hybrid Columnar Compression, Cluster File System, Golden Gate Replication, Database Appliance
+
+Oracle Database 11g Release 1	11.1.0.6	September 2007	11.1.0.7
+September 2008	Active Data Guard, Secure Files, Exadata
+
+Oracle Database 10g Release 2	10.2.0.1	July 2005[23]	10.2.0.5
+April 2010	Real Application Testing, Database Vault, Online Indexing, Advanced Compression, Data Guard Fast-Start Failover, Transparent Data Encryption
+
+Oracle Database 10g Release 1	10.1.0.2	2003	10.1.0.5
+February 2006	Automated Database Management, Automatic Database Diagnostic Monitor, Grid infrastructure, Oracle ASM, Flashback Database
+
+Oracle9i Database Release 2	9.2.0.1	2002	9.2.0.8
+April 2007	Advanced Queuing, Data Mining, Streams, Logical Standby
+
+Oracle9i Database	9.0.1.0	2001	9.0.1.5
+December 2003	Oracle Real Application Clusters (RAC), Oracle XML DB
+
+Oracle8i Database	8.1.5.0	1998	8.1.7.4
+August 2000	Native internet protocols and Java, Virtual Private Database
+
+Oracle8 Database	8.0.3	June 1997	8.0.6	Recovery Manager, Partitioning. First version available for Linux.[24]
+
+Oracle 7.3	7.3.0	February 1996	7.3.4	Object-relational database
+
+Oracle 7.2	7.2.0	May 1995		Shared Server, XA Transactions, Transparent Application Failover
+
+Oracle 7.1	7.1.0	May 1994		Parallel SQL Execution. First version available for Windows NT.[25]
+
+Oracle7	7.0.12	June 1992		PL/SQL stored procedures, Triggers, Distributed 2-phase commit, Shared Cursors, Cost-Based Optimizer
+
+Oracle 6.2	6.2.0			Oracle Parallel Server
+
+Oracle v6	6.0.17	1988	6.0.37	Row-level locking, scalability / performance, online backup and recovery, B*Tree indexes, PL/SQL executed from compiled programs (C etc). First version available for Novell Netware 386.[26]
+
+Oracle v5	5.0.22 (5.1.17)	1985	5.1.22	Support for client/server computing and distributed database systems. First version available for OS/2. Correlated sub-queries[27]
+
+Oracle v4	4.1.4.0	1984	4.1.4.4	Multiversion read consistency. First version available for MS-DOS.[28][29]
+
+Oracle v3	3.1.3	1983		Concurrency control, data distribution, and scalability. Re-written in C for portability to other operating systems, including UNIX.[30]
+
+Oracle v2	2.3	1979		First commercially available SQL RDBMS. Basic SQL queries, simple joins[31] and CONNECT BY joins. Written in assembly language for the PDP-11 to run in 128KB of RAM.[32] Ran on PDP-11 and VAX/VMS in PDP-11 compatibility mode.
+Legend:Old versionOlder version, still maintainedLatest version
+
+The Introduction to Oracle Database includes a brief history on some of the key innovations introduced with each major release of Oracle Database.
+
+See My Oracle Support (MOS) note Release Schedule of Current Database Releases (Doc ID 742060.1) for the current Oracle Database releases and their patching end dates.
+
+Patch updates and security alerts
+Prior to Oracle Database 18c, Oracle Corporation released Critical Patch Updates (CPUs) and Security Patch Updates (SPUs)[33] and Security Alerts to close security vulnerabilities. These releases are issued quarterly; some of these releases have updates issued prior to the next quarterly release.
+
+Starting with Oracle Database 18c, Oracle Corporation releases Release Updates (RUs) and Release Update Revisions (RURs).[34] RUs usually contain security, regression (bug), optimizer, and functional fixes which may include feature extensions as well. RURs include all fixes from their corresponding RU but only add new security and regression fixes. However, no new optimizer or functional fixes are included.
+
+Market position
+A 2016 Gartner report claimed to show Oracle holding #1 RDBMS market share worldwide based on the revenue share ahead of its four closest competitors – Microsoft, IBM, SAP and Teradata .[35][verification needed][clarification needed] A 2021 Gartner Magic Quadrant report named Oracle a leader in Cloud Database Management Systems.[36]
+
+Competition
+In the market for relational databases, Oracle Database competes against commercial products such as IBM Db2 and Microsoft SQL Server. Oracle and IBM tend to battle for the mid-range database market on Unix and Linux platforms, while Microsoft dominates the mid-range database market on Microsoft Windows platforms. However, since they share many of the same customers, Oracle and IBM tend to support each other's products in many middleware and application categories (for example: WebSphere, PeopleSoft, and Siebel Systems CRM), and IBM's hardware divisions work closely[citation needed] with Oracle on performance-optimizing server-technologies (for example, Linux on IBM Z). Niche commercial competitors include Teradata (in data warehousing and business intelligence), Software AG's ADABAS, Sybase, and IBM's Informix, among many others.
+
+In the cloud, Oracle Database competes against the database services of AWS, Microsoft Azure, and Google Cloud Platform.
+
+Increasingly, the Oracle database products compete against open-source software relational and non-relational database systems such as PostgreSQL, MongoDB, Couchbase, Neo4j, ArangoDB and others. Oracle acquired Innobase, supplier of the InnoDB codebase to MySQL, in part to compete better against open source alternatives, and acquired Sun Microsystems, owner of MySQL, in 2010. Database products licensed as open-source are, by the legal terms of the Open Source Definition, free to distribute and free of royalty or other licensing fees.
