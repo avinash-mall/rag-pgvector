@@ -1,0 +1,11 @@
+gensim==4.3.2
+spacy==3.7.4
+scikit-learn==1.5.0
+langdetect==1.0.9
+llama-index==0.10.38
+arabic-reshaper==3.0.0
+python-bidi==0.4.2
+nltk==3.8.1
+python-dotenv==1.0.1
+# python -m spacy download en_core_web_sm
+en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl#sha256=86cc141f63942d4b2c5fcee06630fd6f904788d2f0ab005cce45aadb8fb73889
