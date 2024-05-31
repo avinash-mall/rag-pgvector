@@ -1,4 +1,116 @@
 # Agentic Chunking
+
+This project processes and categorizes text documents by leveraging an external API for summarization and chunking. It reads documents from a specified folder, splits them into individual propositions, and groups similar propositions into chunks. Summaries and titles for these chunks are generated and updated dynamically using the API.
+
+## Features
+
+- Reads text documents from a specified folder.
+- Splits documents into individual propositions (sentences).
+- Groups similar propositions into chunks.
+- Dynamically generates and updates chunk summaries and titles using an external API.
+- Provides detailed and summary views of the chunks.
+
+## Requirements
+
+- Python 3.6+
+- `requests` library
+- `python-dotenv` library
+- `pydantic` library
+
+## Installation
+
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/avinash-mall/rag-pgvector.git
+    cd rag-pgvector/agentic
+    ```
+
+2. Install the required libraries:
+    ```sh
+    pip install -r requirements.txt
+    ```
+3. Download ollama and run phi3-mini
+   ```sh
+    #!/bin/bash
+    
+    # Define the model name
+    MODEL_NAME="phi3"
+    
+    # Step 1: Pull the latest Ollama Docker image
+    echo "Pulling the latest Ollama Docker image..."
+    docker pull ollama/ollama:latest
+    
+    # Step 2: Run the Docker container
+    echo "Running the Ollama Docker container..."
+    docker run -d --name ollama -p 11434:11434 ollama/ollama:latest
+    
+    # Step 3: Download the model
+    echo "Downloading the $MODEL_NAME model..."
+    curl -X POST "http://localhost:11434/api/models" -H "Content-Type: application/json" -d "{\"model\": \"$MODEL_NAME\"}"
+    
+    # Step 4: Check if the model is downloaded
+    echo "Checking the status of the $MODEL_NAME model..."
+    status=$(curl -s "http://localhost:11434/api/models/$MODEL_NAME" | jq -r '.status')
+    
+    # Wait until the model is ready
+    while [ "$status" != "ready" ]; do
+        echo "Model is still downloading... Checking again in 10 seconds."
+        sleep 10
+        status=$(curl -s "http://localhost:11434/api/models/$MODEL_NAME" | jq -r '.status')
+    done
+    
+    echo "Model $MODEL_NAME is ready."
+    
+    # Display running containers
+    docker ps
+    
+    echo "Ollama Docker container with the $MODEL_NAME model is up and running."
+    ```
+    - Save the script to a file, for example, `run_ollama.sh`.
+    - Make the script executable:
+        ```sh
+        chmod +x run_ollama.sh
+        ```  
+    - Run the script:
+        ```sh
+        ./run_ollama.sh
+        ```
+
+## Usage
+
+1. Place your text documents in the folder specified by `FOLDER_PATH` in the `.env` file.
+
+2. Run the script:
+    ```sh
+    python agentic_chunker.py
+    ```
+
+## Script Explanation
+
+The script utilizes a systematic methodology to process, chunk, and categorize text documents:
+
+1. **Configuration and Setup**: Loads environment variables and prompts.
+2. **Document Reading**: Reads text files from a specified folder.
+3. **Chunking Process**: Splits documents into propositions and adds them to appropriate chunks.
+4. **Chunk Management**: Creates new chunks or finds relevant existing chunks for each proposition.
+5. **API Integration**: Sends prompts to an external API to generate and update chunk summaries and titles.
+6. **Output and Visualization**: Prints detailed and summary views of the chunks.
+
+## Example
+
+```python
+if __name__ == "__main__":
+    documents = read_documents_from_folder()
+
+    ac = AgenticChunker()
+
+    for document in documents:
+        ac.add_propositions(document.split('. '))  # Splitting by sentences for chunking
+
+    ac.pretty_print_chunks()
+    ac.pretty_print_chunk_outline()
+    print(ac.get_chunks(get_type='list_of_strings'))
+
 ## Imports and Environment Loading
 
 
