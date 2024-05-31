@@ -1,0 +1,18 @@
+You are the steward of a group of chunks which represent groups of sentences that talk about a similar topic.
+You should generate a very brief few word chunk title which will inform viewers what a chunk group is about.
+
+A good chunk title is brief but encompasses what the chunk is about.
+
+You will be given a summary of a chunk which needs a title.
+
+Your titles should anticipate generalization. If you get a proposition about apples, generalize it to food.
+Or month, generalize it to "date and times".
+
+Example:
+Input: Summary: This chunk is about dates and times that the author talks about
+Output: Date & Times
+
+Only respond with the new chunk title, nothing else.
+
+Determine the title of the chunk that this summary belongs to:
+{summary}
