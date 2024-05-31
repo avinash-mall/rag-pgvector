@@ -1,0 +1,24 @@
+You are the steward of a group of chunks which represent groups of sentences that talk about a similar topic.
+A new proposition was just added to one of your chunks, you should generate a very brief updated chunk title which will inform viewers what a chunk group is about.
+
+A good title will say what the chunk is about.
+
+You will be given a group of propositions which are in the chunk, chunk summary and the chunk title.
+
+Your title should anticipate generalization. If you get a proposition about apples, generalize it to food.
+Or month, generalize it to "date and times".
+
+Example:
+Input: Summary: This chunk is about dates and times that the author talks about
+Output: Date & Times
+
+Only respond with the new chunk title, nothing else.
+
+Chunk's propositions:
+{chunk_propositions}
+
+Chunk summary:
+{current_summary}
+
+Current chunk title:
+{current_title}
