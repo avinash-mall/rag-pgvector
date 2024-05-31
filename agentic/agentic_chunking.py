@@ -117,7 +117,7 @@ class AgenticChunker:
     def get_chunk_outline(self):
         chunk_outline = ""
         for chunk_id, chunk in self.chunks.items():
-            single_chunk_string = f"""Chunk ({chunk['chunk_id']}): {chunk['title']}\nSummary: {chunk['summary']}\n\n"""
+            single_chunk_string = f"Chunk ({chunk['chunk_id']}): {chunk['title']}\nSummary: {chunk['summary']}\n\n"
             chunk_outline += single_chunk_string
         return chunk_outline
 
@@ -149,7 +149,7 @@ class AgenticChunker:
             print(f"Chunk #{chunk['chunk_index']}")
             print(f"Chunk ID: {chunk_id}")
             print(f"Summary: {chunk['summary']}")
-            print(f"Propositions:")
+            print("Propositions:")
             for prop in chunk['propositions']:
                 print(f"    -{prop}")
             print("\n\n")
