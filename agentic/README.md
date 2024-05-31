@@ -96,20 +96,6 @@ The script utilizes a systematic methodology to process, chunk, and categorize t
 5. **API Integration**: Sends prompts to an external API to generate and update chunk summaries and titles.
 6. **Output and Visualization**: Prints detailed and summary views of the chunks.
 
-## Example
-
-```python
-if __name__ == "__main__":
-    documents = read_documents_from_folder()
-
-    ac = AgenticChunker()
-
-    for document in documents:
-        ac.add_propositions(document.split('. '))  # Splitting by sentences for chunking
-
-    ac.pretty_print_chunks()
-    ac.pretty_print_chunk_outline()
-    print(ac.get_chunks(get_type='list_of_strings'))
 
 ## Imports and Environment Loading
 
