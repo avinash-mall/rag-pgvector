@@ -1,0 +1,4 @@
+uuid
+requests
+pydantic
+python-dotenv
