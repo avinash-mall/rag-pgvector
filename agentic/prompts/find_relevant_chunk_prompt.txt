@@ -1,0 +1,28 @@
+Determine whether or not the "Proposition" should belong to any of the existing chunks.
+
+A proposition should belong to a chunk of their meaning, direction, or intention are similar.
+The goal is to group similar propositions and chunks.
+
+If you think a proposition should be joined with a chunk, return the chunk id.
+If you do not think an item should be joined with an existing chunk, just return "No chunks".
+
+Example:
+Input:
+    - Proposition: "Greg really likes hamburgers"
+    - Current Chunks:
+        - Chunk ID: 2n4l3d
+        - Chunk Name: Places in San Francisco
+        - Chunk Summary: Overview of the things to do with San Francisco Places
+
+        - Chunk ID: 93833k
+        - Chunk Name: Food Greg likes
+        - Chunk Summary: Lists of the food and dishes that Greg likes
+Output: Chunk ID: 93833k
+
+Current Chunks:
+--Start of current chunks--
+{current_chunk_outline}
+--End of current chunks--
+
+Determine if the following statement should belong to one of the chunks outlined:
+{proposition}
