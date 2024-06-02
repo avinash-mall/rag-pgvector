@@ -7,7 +7,7 @@ from chunking import process_document
 from node_embedding import construct_nodes_from_chunks, generate_embeddings_for_nodes, NvidiaEmbedModel
 from transformers import AutoTokenizer, AutoModel
 from langdetect import detect
-
+import nltk
 # Load environment variables from .env file
 load_dotenv()
 
@@ -21,7 +21,7 @@ if not DATA_DIR or not NLTK_DATA_DIR or not LOCAL_MODEL_DIR or not LOCAL_QUERY_M
     raise ValueError("Please ensure all required paths are set in the .env file")
 
 # Set the NLTK data path to your local directory
-import nltk
+
 
 nltk.data.path.append(NLTK_DATA_DIR)
 
